@@ -37,3 +37,29 @@
         clear: both;
     }
 /* columns */
+.col {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding: 0 5px;
+    margin-right: -4px; /* adjust default margin added of inline-block */
+    *zoom: 1;
+    *display: inline;
+}
+
+    @media (min-width: 480px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    footer {
+        background-color: #272727;
+        color: white;
+    }
