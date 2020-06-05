@@ -39,10 +39,12 @@
 /* columns */
 .col {
     width: 100%;
+    text-align: center;
     display: inline-block;
     vertical-align: top;
     min-height: 1px;
     padding: 0 5px;
+    border: 1px dashed black;
     margin-right: -4px; /* adjust default margin added of inline-block */
     *zoom: 1;
     *display: inline;
@@ -57,6 +59,14 @@
         .col-3 {
             width: 33.3333%;
         }
+    }
+
+    .comunicado img, h1 {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin: 4% 0.5%;
+        font-size: 2.5em;
+        color: #C6BAA0;
     }
 
     footer {
