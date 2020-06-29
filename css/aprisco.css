@@ -111,9 +111,58 @@ footer {
 }
 .card-r{
     margin: 3% 35% 3% 5%;  
-    padding: 1% 1% 4.2% 1%;
+    padding: 1% 1% 4.1% 1%;
 }
 
-/* .ttl-icon {
-    
-} */
+.card-location-left {
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    border-radius: 1.2em;
+    border-right: 0.5em #dbdbdb solid;
+    border-bottom: 0.5em #dbdbdb solid;
+    margin: 0 5% 7% 10%;
+    padding: 1%;
+}
+.card-location-right {
+    margin: 0 10% 7% 5%;
+    padding: 1%;
+}
+
+.card-bottom {
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 1.2em;
+    border-right: 0.5em #dbdbdb solid;
+    border-bottom: 0.5em #dbdbdb solid;
+    margin: 0 auto;
+    padding: 3%;
+}
+
+#card-radio {
+   padding: 4% 4% 5% 4%;
+}
+
+h2 {
+    display: inline-block;
+    width: 15%;
+    margin: 1% 0 1.5% 0;
+}
+
+.img-card-church {
+    display: inline-block;
+    width: 29%;
+    border-radius: 5em;
+    border: 0.3em #C6BAA0 solid;
+}
+
+.local-ttl {
+    display: inline-block;
+    width: 50%;
+}
+
+.ttl-icon {
+    display: inline-block;
+    width: 1.5em;
+}
