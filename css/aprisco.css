@@ -166,6 +166,46 @@ h2 {
 }
 
 .ttl-icon {
+    position: relative;
     display: inline-block;
     width: 1.5em;
 }
+
+#radio-icon {
+    left: 4.5%;    
+    vertical-align: text-bottom;
+}
+
+#newsletter-icon {
+    left: 2%;    
+    vertical-align: text-bottom;
+}
+
+#newsletter {
+    margin: 2% auto 5% auto;
+}
+
+input {
+    width: 30%;
+    height: 2.7em;
+    border-radius: 5em;
+    border: 2px solid #C6BAA0;
+    text-indent: 1em;
+    font-style: italic;
+}
+
+::-webkit-input-placeholder {
+    color: #C6BAA0;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: #C6BAA0;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: #C6BAA0; 
+ }
+ 
+ :-ms-input-placeholder {  
+    color: #C6BAA0;
+ }
