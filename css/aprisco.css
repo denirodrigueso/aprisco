@@ -185,6 +185,22 @@ h2 {
     margin: 2% auto 5% auto;
 }
 
+.location-btn {
+    background-color: #2D9195;
+    border-radius: 5em;
+    color: white;
+    border: none;
+}
+
+.social-media-btn {
+    border-radius: 5em;
+    border: none;
+    background:rgb(255, 255, 255);
+}
+button:focus {
+    outline: 0;
+}
+
 input {
     width: 30%;
     height: 2.7em;
