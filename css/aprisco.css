@@ -155,12 +155,13 @@ h2 {
     width: 29%;
     border-radius: 5em;
     border: 0.3em #C6BAA0 solid;
+    margin-top: 1em;
 }
 
 .local-ttl {
     display: inline-block;
-    width: 40%;
-    margin: 8% 10% 0% 2%;
+    width: 51%;
+    margin: 5.5% 10% 0% 2%;
     vertical-align: top;
     text-align: left;
 }
@@ -190,6 +191,19 @@ h2 {
     border-radius: 5em;
     color: white;
     border: none;
+    padding: 1.5% 3.8%;
+    position: relative;
+    margin: 0;
+    top: -5em;
+    bottom: 1%;
+    left: 36%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+}
+
+.location-btn img {
+    margin-right: 0.5em;
 }
 
 .social-media-btn {
@@ -201,6 +215,9 @@ button:focus {
     outline: 0;
 }
 
+form {
+    display: inline-block;
+}
 input {
     width: 30%;
     height: 2.7em;
