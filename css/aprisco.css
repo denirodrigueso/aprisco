@@ -45,7 +45,7 @@
     vertical-align: top;
     min-height: 1px;
     padding: 0 5px;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     margin-right: -4px; /* adjust default margin added of inline-block */
     *zoom: 1;
     *display: inline;
@@ -68,6 +68,10 @@ body {
 
 #lg-top-card {
     margin-top: 2%;
+}
+
+.comunicado {
+    margin-bottom: 1.5em;
 }
 
 .comunicado img, h1 {
@@ -226,7 +230,7 @@ h2 {
     background:rgb(255, 255, 255);
 }
 
-button:focus {
+button, input:focus {
     outline: 0;
 }
 
@@ -278,9 +282,9 @@ input {
  }
 
  footer {
-    /* height: 1em;
-    width: 100%; */
-    background-color: #272727;
+    width: 100%;
+    height: 3.5em;
+    background-color: #272727 !important;
     color: white;
 }
 
