@@ -45,7 +45,7 @@
     vertical-align: top;
     min-height: 1px;
     padding: 0 5px;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
     margin-right: -4px; /* adjust default margin added of inline-block */
     *zoom: 1;
     *display: inline;
@@ -70,6 +70,12 @@ body {
     margin-top: 2%;
 }
 
+ @media (min-width: 375px) {
+    #lg-top-card {
+        margin-top: 5%;
+    }
+ }
+
 .comunicado {
     margin-bottom: 1.5em;
 }
@@ -91,6 +97,7 @@ body {
     width: 38%;
     margin: 0 auto;
 }
+
 
 .dot-divider-2 {
     width: 87%;
@@ -125,6 +132,25 @@ body {
 .card-location-right {
     margin: 0 13% 7% 5%;
     padding: 1%;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+    .card-location-left { 
+        width: 90%;
+        height: 13em;
+        background-color: white;
+        border-radius: 1.2em;
+        border-right: 0.5em #dbdbdb solid;
+        border-bottom: 0.5em #dbdbdb solid;
+        margin: 0 2%;
+        padding: 1%;
+    }
+    .card-location-right {
+        margin: 0 13% 7% 5%;
+        padding: 1%;
+    }
+    
 }
 
 .card-bottom {
@@ -215,7 +241,6 @@ h2 {
     margin-left: 0.5em;
 }
 
-
 .social-media-sec {
     width: 60%;
     position: relative;
@@ -286,6 +311,25 @@ input {
     height: 3.5em;
     background-color: #272727;
     color: white;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    #logo-footer {
+        width: 3.5em;
+        height: 2em;
+        margin: 1em auto;
+    }
+   
+    #paragraph-footer {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+   
+    footer {
+       width: 100%;
+       height: 6em;
+   }
 }
 
 ::-webkit-scrollbar {
