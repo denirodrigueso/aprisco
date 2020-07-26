@@ -78,9 +78,22 @@ body {
     color: #C6BAA0;
 }
 
-
-#lg-top-card {
+#logo-top {
     margin-top: 2%;
+}
+
+#radio-icon {
+    left: 4.5%;    
+    vertical-align: text-bottom;
+}
+
+#newsletter-icon {
+    left: 2%;    
+    vertical-align: text-bottom;
+}
+
+#newsletter {
+    margin: 2% auto 5% auto;
 }
 
 .dot-divider {
@@ -92,34 +105,6 @@ body {
     width: 38%;
     margin: 0 auto;
 }
-
- @media (min-width: 320px) and (max-width: 430px) {
-    #lg-top-card img {
-        width: 40%;
-        margin-top: 2%;;
-    }
-
-    .comunicado {
-        margin: 3% auto;
-        width: 100%;
-        
-    }
-
-    .comunicado h1 {
-        width: 100%;
-    }
-
-    .comunicado img:nth-last-child(1) {
-        display: none;
-    } 
-
-    .dot-divider {
-       width: 80%;
-       height: 1.2em;
-    }
-
- }
-
 
 .dot-divider-2 {
     width: 87%;
@@ -141,18 +126,24 @@ body {
     padding: 1% 1% 4.1% 1%;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
-    .card-l {
-        width: 100%;
-        height: 100%;
-        margin: 5% auto;
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
+h2 {
+    display: inline-block;
+    width: 15%;
+    margin: 1% 0 1.5% 0;
+}
 
-    .card-r {
-        padding: 5%;
-    }
+.local-ttl {
+    display: inline-block;
+    width: 55%;
+    margin: 5.5% 5% 0% 3.8%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.ttl-icon {
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
 }
 
 .card-location-left {
@@ -170,26 +161,6 @@ body {
     padding: 1%;
 }
 
-
-@media (min-width: 320px) and (max-width: 430px) {
-
-    .card-location-left { 
-        width: 90%;
-        height: 13em;
-        background-color: white;
-        border-radius: 1.2em;
-        border-right: 0.5em #dbdbdb solid;
-        border-bottom: 0.5em #dbdbdb solid;
-        margin: 0 2%;
-        padding: 1%;
-    }
-    .card-location-right {
-        margin: 0 13% 7% 5%;
-        padding: 1%;
-    }
-    
-}
-
 .card-bottom {
     width: 30%;
     height: 100%;
@@ -205,46 +176,12 @@ body {
    padding: 4% 4% 5% 4%;
 }
 
-h2 {
-    display: inline-block;
-    width: 15%;
-    margin: 1% 0 1.5% 0;
-}
-
 .img-card-church {
     display: inline-block;
     width: 31%;
     border-radius: 5em;
     border: 0.3em #C6BAA0 solid;
     margin: 1.5em 0 0 1em;
-}
-
-.local-ttl {
-    display: inline-block;
-    width: 55%;
-    margin: 5.5% 5% 0% 3.8%;
-    vertical-align: top;
-    text-align: left;
-}
-
-.ttl-icon {
-    position: relative;
-    display: inline-block;
-    width: 1.5em;
-}
-
-#radio-icon {
-    left: 4.5%;    
-    vertical-align: text-bottom;
-}
-
-#newsletter-icon {
-    left: 2%;    
-    vertical-align: text-bottom;
-}
-
-#newsletter {
-    margin: 2% auto 5% auto;
 }
 
 .location-btn {
@@ -284,6 +221,7 @@ h2 {
     top: -6.2em;
     left: 10em;
 }
+
 .social-media-btn {
     border-radius: 5em;
     border: none;
@@ -309,45 +247,136 @@ input {
     font-style: italic;
 }
 
-::-webkit-input-placeholder {
-    color: #C6BAA0;
- }
- 
- :-moz-placeholder { /* Firefox 18- */
-    color: #C6BAA0;  
- }
- 
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: #C6BAA0; 
- }
- 
- :-ms-input-placeholder {  
-    color: #C6BAA0;
- }
+#social-media-footer{
+    margin-bottom: 1em;
+}
 
- #social-media-footer{
-     margin-bottom: 1em;
- }
-
- #logo-footer {
+#logo-footer {
      float: left;
      width: 3.5em;
      height: 2em;
      margin: 0.5em 0 0 30.2em;
- }
+}
 
- #paragraph-footer {
+#paragraph-footer {
      width: 20%;
      text-align: center;
      float: right;
      margin-right: 33.5em;
- }
+}
 
- footer {
+footer {
     width: 100%;
     height: 3.5em;
     background-color: #272727;
     color: white;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+    #logo-top img {
+        width: 40%;
+        margin-top: 2%;;
+    }
+
+    .comunicado {
+        margin: 3% auto;
+        width: 100%;
+        
+    }
+
+    .comunicado h1 {
+        width: 100%;
+    }
+
+    .comunicado img:nth-last-child(1) {
+        display: none;
+    } 
+
+    .dot-divider {
+       width: 80%;
+       height: 1.2em;
+    }
+
+}
+
+/* --- Cards Igrejas, Contas e Serviços --- */
+@media (min-width: 320px) and (max-width: 430px) {
+        
+    .card-l {
+        width: 100%;
+        height: 100%;
+        margin: 5% auto;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .card-r {
+        padding: 5%;
+    }
+
+    .img-card-church {
+        display: inline-block;
+        width: 31%;
+        border-radius: 5em;
+        border: 0.3em #C6BAA0 solid;
+        margin: 1em auto;
+    }
+    
+    
+    .card-location-left { 
+        width: 100%;
+        height: 22em;
+        margin: 5% auto;
+        padding: 1%;
+    }
+
+    .card-location-right {
+        margin: 5% auto;
+        padding: 1%;
+    }
+
+    .social-media-sec {
+        width: 110%;
+        position: relative;
+        top: 3em;
+        left: -0.8em;
+    }
+
+    .social-media-btn {
+        border-radius: 5em;
+        border: none;
+        padding: 0;
+        margin: 0 0.5em;
+        background:rgb(255, 255, 255);
+    }
+
+    .social-media-btn img {
+       width: 3.5em;
+    }
+
+
+    .location-btn {
+        font-size: 1.4em;
+        width: 13em;
+        padding: 5% 14%;
+        position: relative;
+        top: 1.2em;
+        bottom: 1%;
+        left: 1%;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+    }
+    
+    .card-bottom {
+        width: 100%;
+        height: 9em;
+    }
+
+    #onde-atuamos-img, #radio-img {
+        margin: 0.8em auto;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
@@ -367,6 +396,75 @@ input {
        width: 100%;
        height: 6em;
    }
+}
+
+/* --- Titulos e Ícones das Sessões --- */
+@media (min-width: 320px) and (max-width: 430px) {
+    
+    h2 {
+        display: inline-block;
+        width: 40%;
+        margin-right: 15%;
+        text-align: center;
+        line-height: 0.8;
+    }
+    
+    #newsletter-ttl {
+        margin-right: 1%;
+    }
+
+    .local-ttl {
+        display: inline-block;
+        width: 100%;
+        margin: 0 auto;
+        vertical-align: top;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    span {
+        font-size: 0.6em;
+        vertical-align: top;
+    }
+    
+    .ttl-icon {
+        position: relative;
+        left: 5%;
+        display: inline-block;
+        width: 1.9em;
+    }
+
+    #onde-atuamos-icon {
+        margin-bottom: 1%;
+    }
+    
+    #newsletter-icon {
+        left: 0%;    
+        vertical-align: text-bottom;
+    }
+
+    #radio-icon {
+        left: 9.5%;    
+        vertical-align: text-bottom;
+        width: 1.5em;
+    }
+
+}
+
+::-webkit-input-placeholder {
+   color: #C6BAA0;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #C6BAA0;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #C6BAA0; 
+}
+
+:-ms-input-placeholder {  
+   color: #C6BAA0;
 }
 
 ::-webkit-scrollbar {
