@@ -272,7 +272,7 @@ footer {
     color: white;
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 430px) {
     #logo-top img {
         width: 40%;
         margin-top: 2%;;
@@ -300,7 +300,7 @@ footer {
 }
 
 /* --- Cards Igrejas, Contas e Serviços --- */
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 430px) {
         
     .card-l {
         width: 100%;
@@ -321,7 +321,6 @@ footer {
         border: 0.3em #C6BAA0 solid;
         margin: 1em auto;
     }
-    
     
     .card-location-left { 
         width: 100%;
@@ -351,19 +350,17 @@ footer {
     }
 
     .social-media-btn img {
-       width: 3.5em;
+       width: 3.2em;
     }
 
     .location-btn {
-        font-size: 1.4em;
-        width: 13em;
+        font-size: 1.2em;
+        width: 120%;
         padding: 5% 14%;
         position: relative;
         top: 1.2em;
         bottom: 1%;
-        left: 1%;
-        z-index: 99;
-        display: flex;
+        left: -9%;
         align-items: center;
     }
     
@@ -378,7 +375,7 @@ footer {
 
 }
 
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 430px) {
     
     input {
         width: 100%;
@@ -396,8 +393,7 @@ footer {
     
     #logo-footer {
         width: 3.5em;
-        height: 2em;
-        margin: 1em auto;
+        margin: 2.5% 40%;
     }
    
     #paragraph-footer {
@@ -413,12 +409,12 @@ footer {
 }
 
 /* --- Titulos e Ícones das Sessões --- */
-@media (min-width: 320px) and (max-width: 430px) {
+@media (min-width: 300px) and (max-width: 430px) {
     
     h2 {
         display: inline-block;
         width: 40%;
-        margin-right: 15%;
+        margin: 2% 10% 5% 0;
         text-align: center;
         line-height: 0.8;
     }
@@ -472,15 +468,22 @@ footer {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #C6BAA0;  
+   color: #C6BAA0;
+   font-size: 1.1em;
+   letter-spacing: 0.05em;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #C6BAA0; 
+   color: #C6BAA0;
+   font-size: 1.1em;
+   letter-spacing: 0.05em;
 }
 
 :-ms-input-placeholder {  
+
    color: #C6BAA0;
+   font-size: 1.1em;
+   letter-spacing: 0.05em;
 }
 
 ::-webkit-scrollbar {
