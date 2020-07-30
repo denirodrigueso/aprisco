@@ -94,6 +94,7 @@ body {
 
 #newsletter {
     margin: 2% auto 5% auto;
+    /* overflow: hidden; */
 }
 
 .dot-divider {
@@ -345,7 +346,7 @@ footer {
         border-radius: 5em;
         border: none;
         padding: 0;
-        margin: 0 0.5em;
+        margin: 0 0.4em;
         background:rgb(255, 255, 255);
     }
 
@@ -355,12 +356,12 @@ footer {
 
     .location-btn {
         font-size: 1.2em;
-        width: 120%;
+        width: 110%;
         padding: 5% 14%;
         position: relative;
         top: 1.2em;
         bottom: 1%;
-        left: -9%;
+        left: -5.5%;
         align-items: center;
     }
     
@@ -385,10 +386,12 @@ footer {
 
     #assinar-btn {
         font-size: 1.4em;
-        border-radius: 5em;
-        width: 13em;
+        width: 100%;
         padding: 5% 14%;
-        margin: 0 auto 10% auto;
+        margin-bottom: 10%;
+        position: relative;
+        left: -3%;
+
     }
     
     #logo-footer {
