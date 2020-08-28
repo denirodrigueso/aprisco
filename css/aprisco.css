@@ -66,6 +66,14 @@ body {
     background: linear-gradient(0deg, rgba(220,211,190,1) 0%, rgba(255,255,255,1) 100%);
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #33abaf;
+}
+
 .comunicado {
     margin-bottom: 1.5em;
 }
@@ -256,22 +264,19 @@ input {
 }
 
 #logo-footer {
-     float: left;
      width: 3.5em;
      height: 2em;
-     margin: 0.5em 0 0 30.2em;
+     margin: 1% auto 0 auto;
 }
 
 #paragraph-footer {
-     width: 20%;
      text-align: center;
-     float: right;
-     margin-right: 33.5em;
+     margin: 1% auto;
 }
 
 footer {
     width: 100%;
-    height: 3.5em;
+    height: 7.2em;
     background-color: #272727;
     color: white;
 }
