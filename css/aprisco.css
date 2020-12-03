@@ -172,6 +172,16 @@ h2 {
     margin: 0 13% 7% 5%;
     padding: 1%;
 }
+.card-location-center {
+    width: 29.5em;
+    height: 13em;
+    background-color: white;
+    border-radius: 1.2em;
+    border-right: 0.5em #dbdbdb solid;
+    border-bottom: 0.5em #dbdbdb solid;
+    margin: 0 auto 1% auto;
+    padding: 1%;
+}
 
 .card-bottom {
     width: 30%;
@@ -195,7 +205,10 @@ h2 {
     border: 0.3em #C6BAA0 solid;
     margin: 1.5em 0 0 1em;
 }
-
+/* 
+#lisboa-pic{
+    margin-left:10px;
+} */
 .location-btn {
     background-color: #2D9195;
     border-radius: 5em;
@@ -216,6 +229,11 @@ h2 {
 .location-btn img {
     margin-right: 0.3em;
 }
+/* #lisboa-lc-btn{
+    position: relative;
+    top: -5.5em;
+    left: 28.9%;
+} */
 
 #assinar-btn {
     background-color: #2D9195;
@@ -240,6 +258,11 @@ h2 {
     padding: 0;
     margin: 0 0.3em;
     background:rgb(255, 255, 255);
+}
+
+#lisboa-whats {
+    position: relative;
+    left: -98px;
 }
 
 button, input:focus {
@@ -340,6 +363,13 @@ footer {
         padding: 1%;
     }
 
+    .card-location-center { 
+        width: 100%;
+        height: 22em;
+        margin: 5% auto;
+        padding: 1%;
+    }
+
     .social-media-sec {
         width: 110%;
         position: relative;
@@ -372,6 +402,17 @@ footer {
 
     .location-btn img {
         margin: 0 0.2em 0 0.9em;
+    }
+/* ajustar o uso desses button c/ forms tão quebrando o css */
+    #lisboa-whats {
+        background-color: #2D9195;
+        border-radius: 5em;
+        height: 3.1em;
+        color: white;
+        border: none;
+        width: 200%;
+        padding: 5% 10%;
+        align-items: center;
     }
     
     .card-bottom {
@@ -509,6 +550,13 @@ footer {
     }
 
     .card-location-right {
+        margin: 5% auto;
+        padding: 1%;
+    }
+
+    .card-location-center { 
+        width: 47.5%;
+        height: 23em;
         margin: 5% auto;
         padding: 1%;
     }
@@ -689,6 +737,13 @@ footer {
     }
 
     .card-location-right {
+        margin: 5% auto;
+        padding: 1%;
+    }
+
+    .card-location-center { 
+        width: 47.5%;
+        height: 26em;
         margin: 5% auto;
         padding: 1%;
     }
