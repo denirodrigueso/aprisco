@@ -1,868 +1,889 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
 @import "resets/normalize.css";
 
 * {
-    font-family: 'Ubuntu', sans-serif;
-       -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
-               box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* container */
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
-    @media (min-width: 1170px) {
-        .container {
-            width: 1170px;
-            padding: 0;
-        }
-    }
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+    padding: 0;
+  }
+}
 
 /* row */
 .row {
-    margin-left:  -5px;
-    margin-right: -5px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
-    .row::before,
-    .row::after {
-        content: "";
-        display: table;
-    }
-    .row::after {
-        clear: both;
-    }
+.row::before,
+.row::after {
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
 
 /* columns */
 .col {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
-    vertical-align: top;
-    min-height: 1px;
-    padding: 0 5px;
-    /* border: 1px dashed black; */
-    margin-right: -4px; /* adjust default margin added of inline-block */
-    *zoom: 1;
-    *display: inline;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 1px;
+  padding: 0 5px;
+  /* border: 1px dashed black; */
+  margin-right: -4px; /* adjust default margin added of inline-block */
+  *zoom: 1;
+  *display: inline;
 }
 
-    @media (min-width: 500px) {
-        .col-2 {
-            width: 50%;
-        }
-    }
-    @media (min-width: 728px) {
-        .col-3 {
-            width: 33.3333%;
-        }
-    }
+@media (min-width: 500px) {
+  .col-2 {
+    width: 50%;
+  }
+}
+@media (min-width: 728px) {
+  .col-3 {
+    width: 33.3333%;
+  }
+}
 
 body {
-    background: linear-gradient(0deg, rgba(220,211,190,1) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(220, 211, 190, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
 }
 
 button:hover {
-    background-color: #33abaf;
+  /* background-color: #33abaf; */
+  opacity: 0.6;
 }
 
 .comunicado {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-.comunicado img, h1 {
-    display: inline-block;
-    vertical-align: text-bottom;
-    margin: 1% 0.3% 0% 0.3%;
-    font-size: 2em;
-    color: #C6BAA0;
+.comunicado img,
+h1 {
+  display: inline-block;
+  vertical-align: text-bottom;
+  margin: 1% 0.3% 0% 0.3%;
+  font-size: 2em;
+  color: #c6baa0;
 }
 
 #logo-top {
-    margin-top: 2%;
+  margin-top: 2%;
 }
 
 #radio-icon {
-    left: 4.5%;    
-    vertical-align: text-bottom;
+  left: 4.5%;
+  vertical-align: text-bottom;
 }
 
 #newsletter-icon {
-    left: 2%;    
-    vertical-align: text-bottom;
+  left: 2%;
+  vertical-align: text-bottom;
 }
 
 #newsletter-p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #newsletter {
-    margin: 2% auto 5% auto;
+  margin: 2% auto 5% auto;
 }
 
 .dot-divider {
-    background-image: url('../img/dot-divider.png');
-    background-repeat: repeat-x;
-    background-size: 0.55em;
-    height: 0.8em;
-    background-position: center;
-    width: 38%;
-    margin: 0 auto;
+  background-image: url("../img/dot-divider.png");
+  background-repeat: repeat-x;
+  background-size: 0.55em;
+  height: 0.8em;
+  background-position: center;
+  width: 38%;
+  margin: 0 auto;
 }
 
 .dot-divider-2 {
-    width: 87%;
-    margin: 1% auto;
+  width: 87%;
+  margin: 1% auto;
 }
 
 .card-l {
-    width: 60%;
-    height: 100%;
-    background-color: white;
-    border-radius: 1.2em;
-    border-right: 0.5em #dbdbdb solid;
-    border-bottom: 0.5em #dbdbdb solid;
-    margin: 3% 5% 3% 35%;
-    padding: 1%;
+  width: 60%;
+  height: 100%;
+  background-color: white;
+  border-radius: 1.2em;
+  border-right: 0.5em #dbdbdb solid;
+  border-bottom: 0.5em #dbdbdb solid;
+  margin: 3% 5% 3% 35%;
+  padding: 1%;
 }
-.card-r{
-    margin: 3% 35% 3% 5%;  
-    padding: 1% 1% 4.1% 1%;
+.card-r {
+  margin: 3% 35% 3% 5%;
+  padding: 1% 1% 4.1% 1%;
 }
 
 h2 {
-    display: inline-block;
-    width: 15%;
-    margin: 1% 0 1.5% 0;
+  display: inline-block;
+  width: 15%;
+  margin: 1% 0 1.5% 0;
 }
 
 .local-ttl {
-    display: inline-block;
-    width: 55%;
-    margin: 5.5% 5% 0% 3.8%;
-    vertical-align: top;
-    text-align: left;
+  display: inline-block;
+  width: 55%;
+  margin: 5.5% 5% 0% 3.8%;
+  vertical-align: top;
+  text-align: left;
 }
 
 .ttl-icon {
-    position: relative;
-    display: inline-block;
-    width: 1.5em;
+  position: relative;
+  display: inline-block;
+  width: 1.5em;
 }
 
 .card-location-left {
-    width: 29.5em;
-    height: 13em;
-    background-color: white;
-    border-radius: 1.2em;
-    border-right: 0.5em #dbdbdb solid;
-    border-bottom: 0.5em #dbdbdb solid;
-    margin: 0 5% 7% 13%;
-    padding: 1%;
+  width: 29.5em;
+  height: 13em;
+  background-color: white;
+  border-radius: 1.2em;
+  border-right: 0.5em #dbdbdb solid;
+  border-bottom: 0.5em #dbdbdb solid;
+  margin: 0 5% 7% 13%;
+  padding: 1%;
 }
 .card-location-right {
-    margin: 0 13% 7% 5%;
-    padding: 1%;
+  margin: 0 13% 7% 5%;
+  padding: 1%;
 }
 .card-location-center {
-    width: 29.5em;
-    height: 13em;
-    background-color: white;
-    border-radius: 1.2em;
-    border-right: 0.5em #dbdbdb solid;
-    border-bottom: 0.5em #dbdbdb solid;
-    margin: 0 auto 1% auto;
-    padding: 1%;
+  width: 24.5em;
+  height: 13em;
+  background-color: white;
+  border-radius: 1.2em;
+  border-right: 0.5em #dbdbdb solid;
+  border-bottom: 0.5em #dbdbdb solid;
+  margin: 0 auto 1% auto;
+  padding: 1%;
 }
 
 .card-bottom {
-    width: 30%;
-    height: 100%;
-    background-color: white;
-    border-radius: 1.2em;
-    border-right: 0.5em #dbdbdb solid;
-    border-bottom: 0.5em #dbdbdb solid;
-    margin: 0 auto;
-    padding: 3%;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  border-radius: 1.2em;
+  border-right: 0.5em #dbdbdb solid;
+  border-bottom: 0.5em #dbdbdb solid;
+  margin: 0 auto;
+  padding: 3%;
 }
 
 #card-radio {
-   padding: 4% 4% 5% 4%;
+  padding: 4% 4% 5% 4%;
 }
 
 .img-card-church {
-    display: inline-block;
-    width: 31%;
-    border-radius: 5em;
-    border: 0.3em #C6BAA0 solid;
-    margin: 1.5em 0 0 1em;
+  display: inline-block;
+  width: 31%;
+  border-radius: 5em;
+  border: 0.3em #c6baa0 solid;
+  margin: 1.5em 0 0 1em;
 }
-/* 
-#lisboa-pic{
-    margin-left:10px;
-} */
 .location-btn {
-    background-color: #2D9195;
-    border-radius: 5em;
-    color: white;
-    border: none;
-    width: 12em;
-    padding: 3.5% 10%;
-    position: relative;
-    margin: 0;
-    top: -7em;
-    bottom: 1%;
-    left: 22.9%;
-    z-index: 99;
-    display: flex;
-    align-items: center;
+  background-color: #2d9195;
+  border-radius: 5em;
+  color: white;
+  border: none;
+  width: 12em;
+  padding: 3.5% 10%;
+  position: relative;
+  margin: 0;
+  top: -7em;
+  bottom: 1%;
+  left: 22.9%;
+  z-index: 99;
+  display: flex;
+  align-items: center;
 }
 
 .location-btn img {
-    margin-right: 0.3em;
+  margin-right: 0.3em;
 }
-/* #lisboa-lc-btn{
-    position: relative;
-    top: -5.5em;
-    left: 28.9%;
+/* #lisboa-lc-btn {
+  position: relative;
+  top: -6%;
+  left: 19%;
 } */
 
+#lisboa-pic {
+  width: 37%;
+  margin: 1.2em 0 0 1em;
+  float: left;
+}
+#whats-area {
+    margin: 3.2% 0 0 3%;
+    float: left;
+}
+#lisboa-ttl {
+    float: left;
+    width: 30%;
+    margin: 5.5% 0 0 6%;
+}
+
 #assinar-btn {
-    background-color: #2D9195;
-    border-radius: 5em;
-    color: white;
-    border: none;
-    width: 6em;
-    padding: 1% 2%;
-    margin-left: 0.5em;
+  background-color: #2d9195;
+  border-radius: 5em;
+  color: white;
+  border: none;
+  width: 6em;
+  padding: 1% 2%;
+  margin-left: 0.5em;
 }
 
 .social-media-sec {
-    width: 60%;
-    position: relative;
-    top: -6.2em;
-    left: 10em;
+  width: 60%;
+  position: relative;
+  top: -6.2em;
+  left: 10em;
 }
 
 .social-media-btn {
-    border-radius: 5em;
-    border: none;
-    padding: 0;
-    margin: 0 0.3em;
-    background:rgb(255, 255, 255);
+  border-radius: 5em;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  padding: 0;
+  margin: 0 0.3em;
+  background-color: #2d9195;
+}
+
+#lisboa-whats img {
+  width: 45px;
 }
 
 #lisboa-whats {
-    position: relative;
-    left: -98px;
+  border-radius: 5em;
+  color: white;
+  border: none;
+  width: 9.5rem;
+  height: 2.8rem;
+  padding: 3.5% 10%;
+  display: flex;
+  align-items: center;
+  /* position: relative;
+  top: -20%;
+  left: -98px; */
 }
 
-button, input:focus {
-    outline: 0;
+button,
+input:focus {
+  outline: 0;
 }
 
 form {
-    display: inline-block;
+  display: inline-block;
 }
 
 input {
-    width: 30%;
-    height: 2.7em;
-    border-radius: 5em;
-    border: 2px solid #C6BAA0;
-    text-indent: 1em;
-    font-style: italic;
+  width: 30%;
+  height: 2.7em;
+  border-radius: 5em;
+  border: 2px solid #c6baa0;
+  text-indent: 1em;
+  font-style: italic;
 }
 
 #logo-footer {
-    width: 3.5em;
-    height: 2em;
-    margin: 1% auto 0 auto;
+  width: 3.5em;
+  height: 2em;
+  margin: 1% auto 0 auto;
 }
 
 #paragraph-footer {
-     text-align: center;
-     margin: 1% auto;
+  text-align: center;
+  margin: 1% auto;
 }
 
 footer {
-    width: 100%;
-    height: 7.2em;
-    background-color: #272727;
-    color: white;
+  width: 100%;
+  height: 7.2em;
+  background-color: #272727;
+  color: white;
 }
 
 /* --- Primeira Sessão --- */
 @media (min-width: 300px) and (max-width: 480px) {
-    #logo-top img {
-        width: 40%;
-        margin-top: 2%;;
-    }
+  #logo-top img {
+    width: 40%;
+    margin-top: 2%;
+  }
 
-    .comunicado {
-        margin: 3% auto;
-        width: 100%;
-        
-    }
+  .comunicado {
+    margin: 3% auto;
+    width: 100%;
+  }
 
-    .comunicado h1 {
-        width: 100%;
-    }
+  .comunicado h1 {
+    width: 100%;
+  }
 
-    .comunicado img:nth-last-child(1) {
-        display: none;
-    } 
+  .comunicado img:nth-last-child(1) {
+    display: none;
+  }
 
-    .dot-divider {
-       width: 80%;
-       height: 1.2em;
-    }
-
+  .dot-divider {
+    width: 80%;
+    height: 1.2em;
+  }
 }
 
 /* --- Cards Igrejas, Contas e Serviços --- */
 @media (min-width: 300px) and (max-width: 480px) {
-        
-    .card-l {
-        width: 100%;
-        height: 100%;
-        margin: 5% auto;
-        font-size: 1.1em;
-        line-height: 1.5em;
-    }
+  .card-l {
+    width: 100%;
+    height: 100%;
+    margin: 5% auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
 
-    .card-r {
-        padding: 5%;
-    }
+  .card-r {
+    padding: 5%;
+  }
 
-    .img-card-church {
-        display: inline-block;
-        width: 31%;
-        border-radius: 5em;
-        border: 0.3em #C6BAA0 solid;
-        margin: 1em auto;
-    }
-    
-    .card-location-left { 
-        width: 100%;
-        height: 22em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .img-card-church {
+    display: inline-block;
+    width: 31%;
+    border-radius: 5em;
+    border: 0.3em #c6baa0 solid;
+    margin: 1em auto;
+  }
 
-    .card-location-right {
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-left {
+    width: 100%;
+    height: 22em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .card-location-center { 
-        width: 100%;
-        height: 22em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-right {
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-sec {
-        width: 110%;
-        position: relative;
-        top: 3em;
-        left: -0.8em;
-    }
+  .card-location-center {
+    width: 100%;
+    height: 22em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-btn {
-        border-radius: 5em;
-        border: none;
-        padding: 0;
-        margin: 0 0.4em;
-        background:rgb(255, 255, 255);
-    }
+  .social-media-sec {
+    width: 110%;
+    position: relative;
+    top: 3em;
+    left: -0.8em;
+  }
 
-    .social-media-btn img {
-       width: 3.2em;
-    }
+  .social-media-btn {
+    border-radius: 5em;
+    border: none;
+    padding: 0;
+    margin: 0 0.4em;
+    background: rgb(255, 255, 255);
+  }
 
-    .location-btn {
-        font-size: 1.2em;
-        width: 110%;
-        padding: 5% 10%;
-        position: relative;
-        top: 1.2em;
-        bottom: 1%;
-        left: -5.5%;
-        align-items: center;
-    }
+  .social-media-btn img {
+    width: 3.2em;
+  }
 
-    .location-btn img {
-        margin: 0 0.2em 0 0.9em;
-    }
-/* ajustar o uso desses button c/ forms tão quebrando o css */
-    #lisboa-whats {
-        background-color: #2D9195;
-        border-radius: 5em;
-        height: 3.1em;
-        color: white;
-        border: none;
-        width: 200%;
-        padding: 5% 10%;
-        align-items: center;
-    }
-    
-    .card-bottom {
-        width: 100%;
-        height: 9em;
-    }
+  .location-btn {
+    font-size: 1.2em;
+    width: 130%;
+    padding: 5% 10%;
+    position: relative;
+    top: 1.2em;
+    left: -5.5%;
+    bottom: 1%;
+    align-items: center;
+  }
 
-    #onde-atuamos-img, #radio-img {
-        margin: 0.8em auto;
-    }
+  .location-btn img {
+    margin: 0 0.2em 0 0.9em;
+  }
+  /* ajustar o uso desses button c/ forms tão quebrando o css */
+  #lisboa-whats {
+    background-color: #2d9195;
+    border-radius: 5em;
+    height: 3.1em;
+    color: white;
+    border: none;
+    width: 200%;
+    padding: 5% 10%;
+    align-items: center;
+  }
 
+  .card-bottom {
+    width: 100%;
+    height: 9em;
+  }
+
+  #onde-atuamos-img,
+  #radio-img {
+    margin: 0.8em auto;
+  }
 }
 
 /* --- Última Sessão e Footer --- */
 @media (min-width: 300px) and (max-width: 480px) {
-    
-    input {
-        width: 100%;
-        height: 3.9em;
-        margin: 3% 0 5% 0;
-    }
+  input {
+    width: 100%;
+    height: 3.9em;
+    margin: 3% 0 5% 0;
+  }
 
-    #assinar-btn {
-        font-size: 1.4em;
-        width: 100%;
-        padding: 5% 14%;
-        margin-bottom: 10%;
-        position: relative;
-        left: -3%;
+  #assinar-btn {
+    font-size: 1.4em;
+    width: 100%;
+    padding: 5% 14%;
+    margin-bottom: 10%;
+    position: relative;
+    left: -3%;
+  }
 
-    }
-    
-    #logo-footer {
-        width: 3.5em;
-        margin: 2.5% 40%;
-    }
-   
-    #paragraph-footer {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-   
-    footer {
-       width: 100%;
-       height: 6em;
-   }
+  #logo-footer {
+    width: 3.5em;
+    margin: 2.5% 40%;
+  }
+
+  #paragraph-footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+    height: 6em;
+  }
 }
 
 /* --- Titulos e Ícones das Sessões --- */
 @media (min-width: 300px) and (max-width: 480px) {
-    
-    h2 {
-        display: inline-block;
-        width: 40%;
-        margin: 2% 10% 5% 0;
-        text-align: center;
-        line-height: 0.8;
-    }
-    
-    #newsletter-ttl {
-        margin-right: 1%;
-    }
+  h2 {
+    display: inline-block;
+    width: 40%;
+    margin: 2% 10% 5% 0;
+    text-align: center;
+    line-height: 0.8;
+  }
 
-    #newsletter-p {
-        margin-top: 0;
-    }
+  #newsletter-ttl {
+    margin-right: 1%;
+  }
 
-    .local-ttl {
-        display: inline-block;
-        width: 100%;
-        margin: 0 auto;
-        vertical-align: top;
-        text-align: center;
-        font-size: 1.4em;
-    }
-    
-    span {
-        font-size: 0.6em;
-        vertical-align: top;
-    }
-    
-    .ttl-icon {
-        position: relative;
-        left: 5%;
-        display: inline-block;
-        width: 1.9em;
-    }
+  #newsletter-p {
+    margin-top: 0;
+  }
 
-    #onde-atuamos-icon {
-        margin-bottom: 1%;
-    }
-    
-    #newsletter-icon {
-        left: 0%;    
-        vertical-align: text-bottom;
-    }
+  .local-ttl {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: top;
+    text-align: center;
+    font-size: 1.4em;
+  }
 
-    #radio-icon {
-        left: 9.5%;    
-        vertical-align: text-bottom;
-        width: 1.5em;
-    }
+  span {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
 
+  .ttl-icon {
+    position: relative;
+    left: 5%;
+    display: inline-block;
+    width: 1.9em;
+  }
+
+  #onde-atuamos-icon {
+    margin-bottom: 1%;
+  }
+
+  #newsletter-icon {
+    left: 0%;
+    vertical-align: text-bottom;
+  }
+
+  #radio-icon {
+    left: 9.5%;
+    vertical-align: text-bottom;
+    width: 1.5em;
+  }
 }
 
 /* --- Cards Igrejas, Contas e Serviços --- */
 @media (min-width: 480px) and (max-width: 860px) {
-        
-    .card-l {
-        width: 95%;
-        height: 100%;
-        margin: 5% auto;
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
+  .card-l {
+    width: 95%;
+    height: 100%;
+    margin: 5% auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
 
-    .card-r {
-        padding: 5%;
-    }
+  .card-r {
+    padding: 5%;
+  }
 
-    .img-card-church {
-        display: inline-block;
-        width: 31%;
-        border-radius: 5em;
-        border: 0.3em #C6BAA0 solid;
-        margin: 1em auto;
-    }
-    
-    .card-location-left { 
-        width: 95%;
-        height: 23em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .img-card-church {
+    display: inline-block;
+    width: 31%;
+    border-radius: 5em;
+    border: 0.3em #c6baa0 solid;
+    margin: 1em auto;
+  }
 
-    .card-location-right {
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-left {
+    width: 95%;
+    height: 23em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .card-location-center { 
-        width: 47.5%;
-        height: 23em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-right {
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-sec {
-        width: 110%;
-        position: relative;
-        top: 3em;
-        left: -0.8em;
-    }
+  .card-location-center {
+    width: 47.5%;
+    height: 23em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-btn {
-        border-radius: 5em;
-        border: none;
-        padding: 0;
-        margin: 0 0.4em;
-        background:rgb(255, 255, 255);
-    }
+  .social-media-sec {
+    width: 110%;
+    position: relative;
+    top: 3em;
+    left: -0.8em;
+  }
 
-    .social-media-btn img {
-       width: 3.8em;
-    }
+  .social-media-btn {
+    border-radius: 5em;
+    border: none;
+    padding: 0;
+    margin: 0 0.4em;
+    background: rgb(255, 255, 255);
+  }
 
-    .location-btn {
-        font-size: 1.2em;
-        width: 110%;
-        padding: 5% 14%;
-        position: relative;
-        top: 1.2em;
-        bottom: 1%;
-        left: -5%;
-        align-items: center;
-    }
-    
-    .location-btn img {
-        margin: 0 0.5em 0 1.2em;
-    }
-    
-    .card-bottom {
-        width: 60%;
-        height: 12em;
-    }
+  .social-media-btn img {
+    width: 3.8em;
+  }
 
-    #onde-atuamos-img, #radio-img {
-        margin: 2em auto;
-    }
+  .location-btn {
+    font-size: 1.2em;
+    width: 110%;
+    padding: 5% 14%;
+    position: relative;
+    top: 1.2em;
+    bottom: 1%;
+    left: -5%;
+    align-items: center;
+  }
 
+  .location-btn img {
+    margin: 0 0.5em 0 1.2em;
+  }
+
+  .card-bottom {
+    width: 60%;
+    height: 12em;
+  }
+
+  #onde-atuamos-img,
+  #radio-img {
+    margin: 2em auto;
+  }
 }
 
 /* --- Última Sessão e Footer --- */
 @media (min-width: 480px) and (max-width: 860px) {
-    
-    input {
-        width: 70%;
-        height: 2.5em;
-        margin: 3% 0 5% 0;
-        font-size: 1.7em;
-    }
+  input {
+    width: 70%;
+    height: 2.5em;
+    margin: 3% 0 5% 0;
+    font-size: 1.7em;
+  }
 
-    #assinar-btn {
-        font-size: 1.5em;
-        width: 70%;
-        padding: 2% 9%;
-        margin: 0 auto 5% auto;
-    }
-    
-    #logo-footer {
-        width: 3.5em;
-        margin: 2.5% 40%;
-    }
-   
-    #paragraph-footer {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-   
-    footer {
-       width: 100%;
-       height: 6em;
-   }
+  #assinar-btn {
+    font-size: 1.5em;
+    width: 70%;
+    padding: 2% 9%;
+    margin: 0 auto 5% auto;
+  }
+
+  #logo-footer {
+    width: 3.5em;
+    margin: 2.5% 40%;
+  }
+
+  #paragraph-footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  footer {
+    width: 100%;
+    height: 6em;
+  }
 }
 
 /* --- Titulos e Ícones das Sessões --- */
 @media (min-width: 480px) and (max-width: 860px) {
-    
-    h2 {
-        display: inline-block;
-        width: 40%;
-        margin: 2% 10% 5% 0;
-        text-align: center;
-        line-height: 0.8;
-    }
-    
-    #newsletter-ttl {
-        margin-right: 1%;
-    }
+  h2 {
+    display: inline-block;
+    width: 40%;
+    margin: 2% 10% 5% 0;
+    text-align: center;
+    line-height: 0.8;
+  }
 
-    #newsletter-p {
-        font-size: 1.4em ;
-        margin-top: 0;
-    }
+  #newsletter-ttl {
+    margin-right: 1%;
+  }
 
-    .local-ttl {
-        display: inline-block;
-        width: 100%;
-        margin: 0 auto;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 1.6em;
-    }
-    
-    span {
-        font-size: 0.6em;
-        vertical-align: top;
-    }
-    
-    .ttl-icon {
-        position: relative;
-        left: 8%;
-        display: inline-block;
-        width: 1.9em;
-    }
+  #newsletter-p {
+    font-size: 1.4em;
+    margin-top: 0;
+  }
 
-    #onde-atuamos-icon {
-        margin-top: 2%;
-    }
-    
-    #newsletter-icon {
-        left: 10%;    
-        vertical-align: text-bottom;
-    }
+  .local-ttl {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.6em;
+  }
 
-    #radio-icon {
-        left: 15%;    
-        vertical-align: text-bottom;
-        width: 1.5em;
-    }
+  span {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
 
-    #logo-footer {
-        margin: 1% auto 0 auto;
-    }
+  .ttl-icon {
+    position: relative;
+    left: 8%;
+    display: inline-block;
+    width: 1.9em;
+  }
 
-    footer {
-        height: 5em;
-    }
+  #onde-atuamos-icon {
+    margin-top: 2%;
+  }
 
+  #newsletter-icon {
+    left: 10%;
+    vertical-align: text-bottom;
+  }
+
+  #radio-icon {
+    left: 15%;
+    vertical-align: text-bottom;
+    width: 1.5em;
+  }
+
+  #logo-footer {
+    margin: 1% auto 0 auto;
+  }
+
+  footer {
+    height: 5em;
+  }
 }
 
 /* --- Cards Igrejas, Contas e Serviços --- */
 @media (min-width: 861px) and (max-width: 1080px) {
-        
-    .card-l {
-        width: 95%;
-        height: 100%;
-        margin: 5% auto;
-        font-size: 1.2em;
-        line-height: 1.5em;
-    }
+  .card-l {
+    width: 95%;
+    height: 100%;
+    margin: 5% auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
 
-    .card-r {
-        padding: 5%;
-    }
+  .card-r {
+    padding: 5%;
+  }
 
-    .img-card-church {
-        display: inline-block;
-        width: 31%;
-        border-radius: 5em;
-        border: 0.3em #C6BAA0 solid;
-        margin: 1em auto;
-    }
-    
-    .card-location-left { 
-        width: 95%;
-        height: 26em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .img-card-church {
+    display: inline-block;
+    width: 31%;
+    border-radius: 5em;
+    border: 0.3em #c6baa0 solid;
+    margin: 1em auto;
+  }
 
-    .card-location-right {
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-left {
+    width: 95%;
+    height: 26em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .card-location-center { 
-        width: 47.5%;
-        height: 26em;
-        margin: 5% auto;
-        padding: 1%;
-    }
+  .card-location-right {
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-sec {
-        width: 110%;
-        position: relative;
-        top: 3em;
-        left: -0.8em;
-    }
+  .card-location-center {
+    width: 47.5%;
+    height: 26em;
+    margin: 5% auto;
+    padding: 1%;
+  }
 
-    .social-media-btn {
-        border-radius: 5em;
-        border: none;
-        padding: 0;
-        margin: 0 0.4em;
-        background:rgb(255, 255, 255);
-    }
+  .social-media-sec {
+    width: 110%;
+    position: relative;
+    top: 3em;
+    left: -0.8em;
+  }
 
-    .social-media-btn img {
-       width: 3.8em;
-    }
+  .social-media-btn {
+    border-radius: 5em;
+    border: none;
+    padding: 0;
+    margin: 0 0.4em;
+    background: rgb(255, 255, 255);
+  }
 
-    .location-btn {
-        font-size: 1.2em;
-        width: 120%;
-        padding: 5% 14%;
-        position: relative;
-        top: 1.2em;
-        bottom: 1%;
-        left: -10%;
-        align-items: center;
-    }
-    
-    .location-btn img {
-        margin: 0 0.5em 0 1.2em;
-    }
-    
-    .card-bottom {
-        width: 45%;
-        height: 12em;
-    }
+  .social-media-btn img {
+    width: 3.8em;
+  }
 
-    #onde-atuamos-img, #radio-img {
-        margin: 2em auto;
-    }
+  .location-btn {
+    font-size: 1.2em;
+    width: 120%;
+    padding: 5% 14%;
+    position: relative;
+    top: 1.2em;
+    bottom: 1%;
+    left: -10%;
+    align-items: center;
+  }
 
-    input {
-        width: 50%;
-        height: 3.9em;
-        margin: 3% 0 5% 0;
-    }
+  .location-btn img {
+    margin: 0 0.5em 0 1.2em;
+  }
 
-    #assinar-btn {
-        font-size: 1.2em;
-        width: 5%;
-        padding: 2% 9% 2% 3%;
-        margin-bottom: 5%;
-        position: relative;
-    }
+  .card-bottom {
+    width: 45%;
+    height: 12em;
+  }
 
+  #onde-atuamos-img,
+  #radio-img {
+    margin: 2em auto;
+  }
+
+  input {
+    width: 50%;
+    height: 3.9em;
+    margin: 3% 0 5% 0;
+  }
+
+  #assinar-btn {
+    font-size: 1.2em;
+    width: 5%;
+    padding: 2% 9% 2% 3%;
+    margin-bottom: 5%;
+    position: relative;
+  }
 }
 
 /* --- Titulos e Ícones das Sessões --- */
 @media (min-width: 861px) and (max-width: 1080px) {
-    
-    h2 {
-        display: inline-block;
-        width: 20%;
-        margin: 2% auto;
-        text-align: center;
-        line-height: 0.8;
-    }
-    
-    #newsletter-ttl {
-        margin-right: 1%;
-    }
+  h2 {
+    display: inline-block;
+    width: 20%;
+    margin: 2% auto;
+    text-align: center;
+    line-height: 0.8;
+  }
 
-    #newsletter-p {
-        font-size: 1.4em ;
-        margin-top: 0;
-    }
+  #newsletter-ttl {
+    margin-right: 1%;
+  }
 
-    .local-ttl {
-        display: inline-block;
-        width: 100%;
-        margin: 0 auto;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 1.6em;
-    }
-    
-    span {
-        font-size: 0.6em;
-        vertical-align: top;
-    }
-    
-    .ttl-icon {
-        position: relative;
-        left: 1%;
-        display: inline-block;
-        width: 1.9em;
-    }
+  #newsletter-p {
+    font-size: 1.4em;
+    margin-top: 0;
+  }
 
-    #onde-atuamos-icon {
-        margin-top: 2%;
-    }
-    
-    #newsletter-icon {
-        left: 3%;    
-        vertical-align: text-bottom;
-    }
+  .local-ttl {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.6em;
+  }
 
-    #radio-icon {
-        left: 6%;    
-        vertical-align: text-bottom;
-        width: 1.5em;
-    }
-/* 
+  span {
+    font-size: 0.6em;
+    vertical-align: top;
+  }
+
+  .ttl-icon {
+    position: relative;
+    left: 1%;
+    display: inline-block;
+    width: 1.9em;
+  }
+
+  #onde-atuamos-icon {
+    margin-top: 2%;
+  }
+
+  #newsletter-icon {
+    left: 3%;
+    vertical-align: text-bottom;
+  }
+
+  #radio-icon {
+    left: 6%;
+    vertical-align: text-bottom;
+    width: 1.5em;
+  }
+  /* 
     #logo-footer {
         float: left;
         width: 3.5em;
@@ -876,39 +897,39 @@ footer {
         float: right;
         margin-right: 15.5em;
     } */
-
 }
 
 ::-webkit-input-placeholder {
-   color: #C6BAA0;
-   font-size: 1.1em;
-   letter-spacing: 0.05em;
+  color: #c6baa0;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
-:-moz-placeholder { /* Firefox 18- */
-   color: #C6BAA0;
-   font-size: 1.1em;
-   letter-spacing: 0.05em;  
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #c6baa0;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #C6BAA0;
-   font-size: 1.1em;
-   letter-spacing: 0.05em;
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c6baa0;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
-:-ms-input-placeholder {  
-
-   color: #C6BAA0;
-   font-size: 1.1em;
-   letter-spacing: 0.05em;
+:-ms-input-placeholder {
+  color: #c6baa0;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: #a3a3a3;
+  width: 5px;
+  background-color: #a3a3a3;
 }
