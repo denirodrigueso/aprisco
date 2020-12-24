@@ -23,6 +23,8 @@
 }
 
 /* row */
+/* Essa classe de repente começou a gerar um margin right de 5px 
+que pode ser claramente visto no footer, dar uma olhada nisso! */
 .row {
   margin-left: -5px;
   margin-right: -5px;
