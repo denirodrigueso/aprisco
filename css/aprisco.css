@@ -145,6 +145,13 @@ h1 {
   padding: 1% 1% 4.1% 1%;
 }
 
+.top-card-center {
+  margin: 0 auto;
+  padding: 2% 1% 2% 1%;
+  width: 30%;
+  height: 80%;
+}
+
 h2 {
   display: inline-block;
   width: 15%;
@@ -296,6 +303,17 @@ h2 {
   /* position: relative;
   top: -20%;
   left: -98px; */
+}
+
+
+img#pix-logo {
+  margin-left: 30%;
+  float: left;
+}
+
+h3#pix-ttl {
+  margin: 0 auto;
+  width: 35%;
 }
 
 button,
