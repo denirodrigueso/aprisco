@@ -1,11 +1,10 @@
 Prisco Church Landpage
 
-Para implementar:
+To do:
 - Colocar a bandeira de cada país nos cards (dos ícones do Whatsapp)
 - Alterar description tag meta
 
-
-Feito:
+Done:
 
 - Title "Aprisco Church"
 - Comentado Aprisco London
