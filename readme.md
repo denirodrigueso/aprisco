@@ -1,8 +1,7 @@
-Prisco Church Landpage
+Aprisco Church Project
 
 To do:
 - Colocar a bandeira de cada país nos cards (dos ícones do Whatsapp)
-- Alterar description tag meta
 
 Done:
 
@@ -10,4 +9,4 @@ Done:
 - Comentado Aprisco London
 - Alteração automática do ano no Copyright
 
-Data do último deploy 05/01/2021
+Data do último deploy 28/11/2021

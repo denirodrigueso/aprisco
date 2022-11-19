@@ -223,7 +223,7 @@ h2 {
   display: inline-block;
   width: 31%;
   border-radius: 5em;
-  border: 0.3em #c6baa0 solid;
+  outline: 0.3em #c6baa0 solid;
   margin: 1.5em 0 0 1em;
 }
 .location-btn {
@@ -279,9 +279,11 @@ h2 {
 
 .social-media-sec {
   width: 60%;
+  display: flex;
+  align-content: flex-start;
   position: relative;
   top: -6.2em;
-  left: 10em;
+  left: 10.5em;
 }
 
 .social-media-btn {
@@ -290,7 +292,7 @@ h2 {
   height: 3.2rem;
   border: none;
   padding: 0;
-  margin: 0 0.3em;
+  margin-left: 0.5em;
   background-color: #2d9195;
 }
 
