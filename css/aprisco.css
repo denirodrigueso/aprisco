@@ -440,8 +440,10 @@ footer {
   }
 
   .social-media-sec {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     position: relative;
+    width: 100%;
     left: 0%;
     top: 15%;
   }
@@ -662,6 +664,8 @@ footer {
   }
 
   .social-media-sec {
+    display: flex;
+    justify-content: center;
     width: 100%;
     position: relative;
     left: 0%;
@@ -879,6 +883,8 @@ footer {
   }
 
   .social-media-sec {
+    display: flex;
+    justify-content: center;
     width: 110%;
     position: relative;
     top: 3em;
