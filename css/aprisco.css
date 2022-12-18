@@ -193,7 +193,7 @@ h2 {
   padding: 1%;
 }
 .card-location-center {
-  width: 24.5em;
+  width: 28.5em;
   height: 13em;
   background-color: white;
   border-radius: 1.2em;
@@ -201,6 +201,18 @@ h2 {
   border-bottom: 0.5em #dbdbdb solid;
   margin: 0 auto 1% auto;
   padding: 1%;
+}
+
+#on-descript {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#description {
+  margin: 10px 0 10px 20px;
+  text-align: left;
 }
 
 .card-bottom {
@@ -246,22 +258,17 @@ h2 {
 .location-btn img {
   margin-right: 0.3em;
 }
-/* #lisboa-lc-btn {
-  position: relative;
-  top: -6%;
-  left: 19%;
-} */
 
-#lisboa-pic {
-  width: 37%;
-  margin: 1.2em 0 0 1em;
+#on-pic {
+  width: 35%;
+  margin: 1em 0 0 1em;
   float: left;
 }
 #whats-area {
   margin: 3.2% 0 0 3%;
   float: left;
 }
-#lisboa-ttl {
+#on-ttl {
   float: left;
   width: 30%;
   margin: 5.5% 0 0 6%;
@@ -301,17 +308,17 @@ h2 {
   margin-top: 2px;
 }
 
-#lisboa-whats-btn img {
+#on-cta-btn img {
   width: 45px;
 }
 
-#lisboa-whats-btn {
+#on-cta-btn {
   border-radius: 5em;
   color: white;
   border: none;
   width: 9.5rem;
   height: 2.8rem;
-  padding: 3.5% 10%;
+  padding: 1% 5%;
   font-size: 1.05em;
   display: flex;
   align-items: center;
@@ -434,7 +441,7 @@ footer {
 
   .card-location-center {
     width: 100%;
-    height: 18em;
+    height: 21em;
     margin: 5% auto;
     padding: 1%;
   }
@@ -483,13 +490,18 @@ footer {
     height: 9em;
   }
 
-  #lisboa-pic {
+  #description {
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+
+  #on-pic {
     width: 31%;
     margin: 1em auto;
     float: none;
   }
 
-  #lisboa-ttl {
+  #on-ttl {
     float: left;
     width: 100%;
     margin: 0;
@@ -500,15 +512,15 @@ footer {
     margin: 3.2% 0 0 0;
   }
 
-  #lisboa-whats-btn {
+  #on-cta-btn {
     width: 80%;
     padding: 0 0 0 20%;
     font-size: 1.22em;
     text-align: center;
-    margin: 5% 0 0 10%;
+    margin: 0 0 0 10%;
   }
 
-  #lisboa-whats-btn img {
+  #on-cta-btn img {
     width: 40px;
   }
 
@@ -654,7 +666,7 @@ footer {
 
   .card-location-center {
     width: 47.5%;
-    height: 18em;
+    height: 20em;
     margin: 5% auto;
     padding: 1%;
   }
@@ -709,13 +721,18 @@ footer {
     height: 12em;
   }
 
-  #lisboa-pic {
+  #on-pic {
     width: 31%;
     margin: 1em auto;
     float: none;
   }
 
-  #lisboa-ttl {
+  #description {
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+
+  #on-ttl {
     float: left;
     width: 100%;
     margin: 0;
@@ -726,15 +743,15 @@ footer {
     margin: 3.2% 0 0 0;
   }
 
-  #lisboa-whats-btn {
+  #on-cta-btn {
     width: 80%;
     padding: 0 0 0 20%;
     font-size: 1.22em;
     text-align: center;
-    margin: 5% 0 0 10%;
+    margin: 0 0 0 10%;
   }
 
-  #lisboa-whats-btn img {
+  #on-cta-btn img {
     width: 40px;
   }
 
@@ -877,7 +894,7 @@ footer {
 
   .card-location-center {
     width: 47.5%;
-    height: 26em;
+    height: 28em;
     margin: 5% auto;
     padding: 1%;
   }
@@ -921,6 +938,19 @@ footer {
   .card-bottom {
     width: 45%;
     height: 12em;
+  }
+
+  #description {
+    text-align: center;
+    margin: 5px 0 0 0;
+  }
+
+  #on-cta-btn {
+    width: 80%;
+    padding: 0 0 0 20%;
+    font-size: 1.22em;
+    text-align: center;
+    margin: 5% 0 0 10%;
   }
 
   #onde-atuamos-img,

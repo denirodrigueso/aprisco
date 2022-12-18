@@ -190,7 +190,7 @@
                     <img src="img/facebook-logo-icon.png" />
                   </button>
                 </form> -->
-                
+
                 <!-- <form action="#youtube" method="get" class="sm-form">
                   <button class="social-media-btn">
                     <img src="img/youtube-logo-icon.png" />
@@ -221,11 +221,6 @@
                 </button>
               </form>
               <div class="social-media-sec">
-                <!-- <form mothod="get" action="" target="_blank" class="sm-form">
-                  <button class="social-media-btn">
-                    <img src="img/facebook-logo-icon.png" />
-                  </button>
-                </form> -->
                 <form
                   action="https://www.instagram.com/apriscoportugal/"
                   method="get"
@@ -236,11 +231,6 @@
                     <img src="img/insta-logo-icon.png" />
                   </button>
                 </form>
-                <!-- <form action="#youtube" method="get" class="sm-form">
-                  <button class="social-media-btn">
-                    <img src="img/youtube-logo-icon.png" />
-                  </button>
-                </form> -->
                 <form action="whatsapp" method="get" class="sm-form">
                   <button class="social-media-btn">
                     <img src="img/whatsapp-logo-icon.png" />
@@ -257,7 +247,12 @@
                 class="img-card-church"
               />
               <h3 class="local-ttl">Sterling-MA</h3>
-              <form action="https://goo.gl/maps/LKe2KPwmTidMquL87" target="_blank" method="get" class="lc-form">
+              <form
+                action="https://goo.gl/maps/LKe2KPwmTidMquL87"
+                target="_blank"
+                method="get"
+                class="lc-form"
+              >
                 <button class="location-btn">
                   <img src="img/location-icon.png" class="location-icon" />
                   Abrir Localização
@@ -284,44 +279,39 @@
                     <img src="img/insta-logo-icon.png" />
                   </button>
                 </form>
-                <form action="https://www.youtube.com/@ApriscoUSA/videos" method="get" class="sm-form">
+                <form
+                  action="https://www.youtube.com/@ApriscoUSA/videos"
+                  method="get"
+                  class="sm-form"
+                >
                   <button class="social-media-btn">
                     <img src="img/youtube-logo-icon.png" />
                   </button>
                 </form>
-                <!-- <form action="whatsapp" method="get" class="sm-form">
-                  <button class="social-media-btn">
-                    <img src="img/whatsapp-logo-icon.png" />
-                  </button>
-                </form> -->
               </div>
             </div>
           </div>
         </div>
-        <!--<div>
-          &lt;!&ndash;<div class="col">
+        <div>
+          <div class="col">
             <div class="card-location-center">
               <img
                 src="img/logo-card-icon.png"
                 alt="logo aprisco"
                 class="img-card-church"
-                id="lisboa-pic"
+                id="on-pic"
               />
-              <h3 class="local-ttl" id="lisboa-ttl">Londres-UK</h3>
-              &lt;!&ndash; <form action="" method="get" id="lisboa-lc-btn" class="lc-form">
-                    <button class="location-btn" >
-                      <img src="img/location-icon.png" class="location-icon" />
-                      Abrir Localização
-                    </button>
-              </form> &ndash;&gt;
-              <form action="whatsapp" method="get" id="whats-area">
-                <button class="social-media-btn" id="lisboa-whats-btn">
-                  <img src="img/whatsapp-logo-icon.png" /> Contato
-                </button>
-              </form>
+              <div id="on-descript">
+                <h3 class="local-ttl" id="on-ttl">ApriscoOn</h3>
+                <p id="description">Nossa Igreja Online atráves de encontros na nossa sala no aplicativo Zoom<br/>(7h, 15h e às 21h)</p>
+                <form action="whatsapp" method="get" id="whats-area">
+                  <button class="social-media-btn" id="on-cta-btn">
+                    <img src="img/zoom-logo-icon.png" /> Participar
+                  </button>
+                </form>
             </div>
-          </div>&ndash;&gt;
-        </div>-->
+          </div>
+        </div>
       </section>
       <div class="dot-divider dot-divider-2"></div>
       <section id="onde-atuamos-sec">
@@ -374,39 +364,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="dot-divider dot-divider-2"></div> -->
-      <!-- <div class="row">
-        <div class="col">
-          <img
-            src="img/newsletter-ttl-icon.svg"
-            alt=""
-            title=""
-            id="newsletter-icon"
-            class="ttl-icon"
-          />
-          <h2 id="newsletter-ttl">Newsletter</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <p id="newsletter-p">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div id="newsletter">
-            <input
-              name="email"
-              type="email"
-              placeholder="Digite aqui seu email"
-            />
-            <button id="assinar-btn">Assinar</button>
-          </div>
-        </div>
-      </div> -->
     </div>
     <footer class="row">
       <div class="col">
@@ -417,8 +374,8 @@
       </div>
     </footer>
     <script>
-      let cYear = new Date().getFullYear()
-      let year = document.getElementById('year').innerText = `${cYear} `;
+      let cYear = new Date().getFullYear();
+      let year = (document.getElementById("year").innerText = `${cYear} `);
     </script>
   </body>
 </html>
